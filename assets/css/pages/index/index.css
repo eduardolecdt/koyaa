@@ -1,0 +1,7 @@
+/* index */
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/header.css';
