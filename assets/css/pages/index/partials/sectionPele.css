@@ -2,6 +2,17 @@
 
 section.pele {
   display: none;
+  background-image: url('../../../../../files/images/index/background-folhas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.pele .imagem {
+  background-image: url('../../../../../files/images/index/imagem-pele.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Responsivo */

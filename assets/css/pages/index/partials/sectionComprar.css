@@ -2,6 +2,10 @@
 
 section.comprar {
   display: none;
+  background-image: url('../../../../../files/images/index/background-textura.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Responsivo */

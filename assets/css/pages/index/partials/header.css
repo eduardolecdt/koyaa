@@ -2,6 +2,17 @@
 
 header {
   display: none;
+  background-image: url('../../../../../files/images/index/background-folhas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .imagem {
+  background-image: url('../../../../../files/images/index/imagem-header.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Responsivo */

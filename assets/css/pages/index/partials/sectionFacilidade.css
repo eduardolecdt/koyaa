@@ -2,6 +2,17 @@
 
 section.facilidade {
   display: none;
+  background-image: url('../../../../../files/images/index/background-folhas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.facilidade .imagem {
+  background-image: url('../../../../../files/images/index/imagem-facilidade.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Responsivo */
