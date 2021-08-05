@@ -4,4 +4,12 @@
 
 /* Partials */
 
+@import './partials/nav.css';
 @import './partials/header.css';
+@import './partials/sectionBeneficios.css';
+@import './partials/sectionComprar.css';
+@import './partials/sectionDepoimentos.css';
+@import './partials/sectionDiferenciais.css';
+@import './partials/sectionFacilidade.css';
+@import './partials/sectionPele.css';
+@import './partials/footer.css';

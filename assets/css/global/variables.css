@@ -10,16 +10,14 @@ VARIABLES
 
   --cor-branco: #FFFFFF;
   --cor-preto: #000000;
-
-  --cor-cinza: #141518;
-  
-  --cor-verde-claro: #00ff6d;
-  --cor-verde: #00bf8c;
-  --cor-ciano: #1AFA96;
+  --cor-cinza: #070705;
+  --cor-verde: #7E7F40;
+  --cor-pele: #BB9C70;
 
   /* Fontes */
 
-  --fonte-estilo: 'badGrunge';
-  --fonte-regular: 'gtWalsheimRegular';
+  --fonte-estilo: 'oggRoman';
+  --fonte-regular: 'markProRegular';
+  --fonte-bold: 'markProBold';
 
 }

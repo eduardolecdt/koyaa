@@ -1,6 +1,6 @@
-/* index <header> */
+/* index <section class="beneficios"> */
 
-header {
+section.beneficios {
   display: none;
 }
 

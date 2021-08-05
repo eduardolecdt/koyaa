@@ -1,6 +1,6 @@
-/* index <header> */
+/* index <section class="comprar"> */
 
-header {
+section.comprar {
   display: none;
 }
 
