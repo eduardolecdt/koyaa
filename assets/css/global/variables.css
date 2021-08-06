@@ -13,6 +13,9 @@ VARIABLES
   --cor-cinza: #070705;
   --cor-verde: #7E7F40;
   --cor-pele: #BB9C70;
+  --cor-sombra: rgba(0, 0, 0, 0.2);
+  --cor-branco-transparente: rgba(255, 255, 255, 0.9);
+  --cor-preto-transparente: rgba(0, 0, 0, 0.7);
 
   /* Fontes */
 

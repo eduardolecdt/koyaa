@@ -1,11 +1,16 @@
 /* index <section class="facilidade"> */
 
 section.facilidade {
-  display: none;
+  display: flex;
   background-image: url('../../../../../files/images/index/background-folhas.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+section.facilidade * {
+  display: none;
 }
 
 section.facilidade .imagem {

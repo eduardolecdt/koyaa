@@ -2,21 +2,98 @@
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 120px 80px;
   background-image: url('../../../../../files/images/index/background-folhas.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  position: relative;
 }
 
-header .imagem {
-  background-image: url('../../../../../files/images/index/imagem-header.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+header .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate(0, -50%);
+  background-color: var(--cor-branco);
+  width: 100%;
+  max-width: 30%;
+  z-index: 1;
+}
+
+header .quadro h1 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-cinza);
+  line-height: 1.2;
+}
+
+header .quadro p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+header .quadro button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 5vw, 1.1rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde);
+  padding: 15px 22px;
+  text-transform: uppercase;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+header .quadro button:hover {
+  background-color: var(--cor-pele);
+}
+
+header img {
+  width: 80%;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 120px 20px 90px 0;
+  }
+  header .quadro {
+    padding: 60px 20px 30px 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 90%;
+    max-width: 90%;
+  }
+  header .quadro span {
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 100%;
+    background-color: var(--cor-branco);
+    height: 30px;
+    min-height: 30px;
+  }
+  header img {
+    width: 100%;
+  }
 }
