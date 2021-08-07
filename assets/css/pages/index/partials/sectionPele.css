@@ -1,21 +1,102 @@
 /* index <section class="pele"> */
 
 section.pele {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 120px 80px;
   background-image: url('../../../../../files/images/index/background-folhas.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-section.pele .imagem {
-  background-image: url('../../../../../files/images/index/imagem-pele.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+section.pele .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translate(0, -50%);
+  background-color: var(--cor-branco);
+  width: 100%;
+  max-width: 45%;
+  z-index: 1;
+}
+
+section.pele .quadro h2 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-pele);
+  line-height: 1.2;
+}
+
+section.pele .quadro h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  text-transform: uppercase;
+  padding: 30px 0 10px 0;
+}
+
+section.pele .quadro p {
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-transform: uppercase;
+  padding: 10px 0 0 0;
+}
+
+section.pele .quadro p img {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin: 5px 10px 0 0;
+}
+
+section.pele img {
+  width: 60%;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.pele {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 120px 20px 120px 0;
+  }
+  section.pele .quadro {
+    padding: 60px 20px 30px 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 90%;
+    max-width: 90%;
+  }
+  section.pele .quadro span {
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+    width: 100%;
+    background-color: var(--cor-branco);
+    height: 30px;
+    min-height: 30px;
+  }
+  section.pele img {
+    width: 100%;
+  }
 }

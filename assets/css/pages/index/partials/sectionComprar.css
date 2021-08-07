@@ -1,14 +1,141 @@
 /* index <section class="comprar"> */
 
 section.comprar {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px 180px 80px;
   background-image: url('../../../../../files/images/index/background-textura.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+section.comprar h2 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-cinza);
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 0 250px 0;
+}
+
+/* Quadros */
+
+section.comprar .quadros {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+section.comprar .quadros .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200px 30px 30px 30px;
+  border: 3px solid var(--cor-pele);
+  width: 100%;
+  margin: 0 20px;
+  position: relative;
+}
+
+section.comprar .quadros .quadro img {
+  width: 100%;
+  position: absolute;
+  top: -200px;
+}
+
+section.comprar .quadros .quadro.um img {
+  left: 0%;
+}
+
+section.comprar .quadros .quadro.dois img {
+  left: -5%;
+}
+
+section.comprar .quadros .quadro.tres img {
+  left: -10%;
+}
+
+section.comprar .quadros .quadro h4 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section.comprar .quadros .quadro h3 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-pele);
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 0 30px 0;
+}
+
+section.comprar .quadros .quadro h5 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0 0 5px 0;
+}
+
+section.comprar .quadros .quadro p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0 0 30px 0;
+}
+
+section.comprar .quadros .quadro button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 5vw, 1.1rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde);
+  padding: 15px 22px;
+  text-transform: uppercase;
+  text-align: left;
+  transition: all 0.3s;
+  margin-right: auto;
+}
+
+section.comprar .quadros .quadro button:hover {
+  background-color: var(--cor-pele);
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.comprar {
+    padding: 80px 20px 140px 20px;
+  }
+  section.comprar h2 {
+    width: 100%;
+    max-width: 300px;
+    padding: 0 0 0 0;
+  }
+  section.comprar .quadros {
+    flex-direction: column;
+  }
+  section.comprar .quadros .quadro {
+    padding: 200px 20px 20px 20px;
+    margin: 150px 0 0 0;
+  }
+  section.comprar .quadros .quadro img {
+    top: -100px;
+  }
 }

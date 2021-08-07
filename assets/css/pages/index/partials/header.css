@@ -25,7 +25,7 @@ header .quadro {
   transform: translate(0, -50%);
   background-color: var(--cor-branco);
   width: 100%;
-  max-width: 30%;
+  max-width: 25%;
   z-index: 1;
 }
 
@@ -73,7 +73,7 @@ header img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 120px 20px 90px 0;
+    padding: 120px 20px 120px 0;
   }
   header .quadro {
     padding: 60px 20px 30px 20px;

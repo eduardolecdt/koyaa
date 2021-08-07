@@ -1,10 +1,81 @@
 /* index <section class="beneficios"> */
 
 section.beneficios {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px 80px 0 80px;
+  background-image: url('../../../../../files/images/index/background-textura.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.beneficios img {
+  width: 100%;
+  max-width: 300px;
+}
+
+section.beneficios .texto {
+  width: 100%;
+  padding: 0 0 100px 150px;
+}
+
+section.beneficios .texto h2 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  color: var(--cor-cinza);
+  line-height: 1.2;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.beneficios .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-transform: uppercase;
+  padding: 25px 0 0 25px;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+}
+
+section.beneficios .texto p span {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  background-color: var(--cor-pele);
+  border-radius: 50%;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.beneficios {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 60px 20px 0 20px;
+  }
+  section.beneficios img {
+    max-width: 500px;
+  }
+  section.beneficios .texto {
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  section.beneficios .texto h2 {
+    max-width: 300px;
+  }
+  section.beneficios .texto p span {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    min-height: 10px;
+  }
 }

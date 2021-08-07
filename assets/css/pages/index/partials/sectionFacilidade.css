@@ -2,25 +2,98 @@
 
 section.facilidade {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 120px 80px;
   background-image: url('../../../../../files/images/index/background-folhas.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 300px;
+  position: relative;
 }
 
-section.facilidade * {
-  display: none;
+section.facilidade .quadro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 40px;
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translate(0, -50%);
+  background-color: var(--cor-branco);
+  width: 100%;
+  max-width: 25%;
+  z-index: 1;
 }
 
-section.facilidade .imagem {
-  background-image: url('../../../../../files/images/index/imagem-facilidade.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+section.facilidade .quadro h2 {
+  font-family: var(--fonte-estilo);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--cor-cinza);
+  line-height: 1.2;
+}
+
+section.facilidade .quadro p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  color: var(--cor-cinza);
+  line-height: 1.8;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+section.facilidade .quadro button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 5vw, 1.1rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-verde);
+  padding: 15px 22px;
+  text-transform: uppercase;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+section.facilidade .quadro button:hover {
+  background-color: var(--cor-pele);
+}
+
+section.facilidade img {
+  width: 80%;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  section.facilidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 120px 20px 120px 0;
+  }
+  section.facilidade .quadro {
+    padding: 30px 20px 60px 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 90%;
+    max-width: 90%;
+  }
+  section.facilidade .quadro span {
+    position: absolute;
+    left: 0;
+    top: -28px;
+    width: 100%;
+    background-color: var(--cor-branco);
+    height: 30px;
+    min-height: 30px;
+  }
+  section.facilidade img {
+    width: 100%;
+  }
 }
